@@ -233,7 +233,7 @@ address {
       rgba(47, 48, 58, 0.9),
       rgba(47, 48, 58, 0.9)
     ),
-    url(/images/hero_img.jpg);
+    url(./images/hero_img.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -290,25 +290,25 @@ address {
 }
 
 .f-box-img {
-  background-image: url(/images/antenna.svg);
+  background-image: url(./images/antenna.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .s-box-img {
-  background-image: url(/images/clock.svg);
+  background-image: url(./images/clock.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .t-box-img {
-  background-image: url(/images/diagram.svg);
+  background-image: url(./images/diagram.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .fs-box-img {
-  background-image: url(/images/astronaut.svg);
+  background-image: url(./images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
