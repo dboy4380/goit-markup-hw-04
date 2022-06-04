@@ -18,7 +18,7 @@
 body {
   font-family: roboto, sans-serif;
   color: var(--accessory-text-color);
-}   
+}
 
 header {
   border-bottom: 1px solid #ececec;
@@ -193,40 +193,21 @@ address {
   color: var(--accent-color);
 }
 
-
-
 .contact-item {
   margin-right: 50px;
 }
 
 
-
-.mail-contact::before {
-  width: 16px;
-  height: 12px;
+.contact-icon {
   margin-right: 10px;
-  content: "";
-  background-image: url(/images/envelope.svg);
-  background-size: contain;
+  fill: var(--accessory-text-color);
+
 }
 
-.phone-contact::before {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  content: "";
-  background-image: url(/images/smartphone.svg);
-  background-size: contain;
-}
-
-.phone-contact:hover {
+.contact-icon:hover,
+.contact-icon:focus {
   fill: var(--accent-color);
 }
-
-.contact-item:last-child {
-  margin-right: 0;
-}
-
 
 /* -----------------HERO------------------ */
 
@@ -270,7 +251,6 @@ address {
   padding: 10px 35px;
   transition: 0.5s;
 }
-
 
 .button-hero:hover {
   background: var(--btn-color);
@@ -403,69 +383,30 @@ address {
   margin-right: 0;
 }
 
-.button-inst {
+.button-icon {
   width: 44px;
   height: 44px;
-  display: block;
-  background-image: url(/images/inst.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-color: var(--first-back-color);
   border-radius: 50px;
   transition: 0.7s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-inst:hover {
-  background-image: url(/images/instagram.svg);
+.button-icon:hover,
+.button-icon:focus {
   background-color: var(--accent-color);
 }
 
-.button-twitter {
-  width: 44px;
-  height: 44px;
-  display: block;
-  background-image: url(/images/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: var(--first-back-color);
-  border-radius: 50px;
+.card-icon {
+  fill: var(--accessory-text-color);
   transition: 0.7s;
 }
 
-.button-twitter:hover {
-  background-color: var(--accent-color);
-}
-
-.button-facebook {
-  width: 44px;
-  height: 44px;
-  display: block;
-  background-image: url(/images/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: var(--first-back-color);
-  border-radius: 50px;
-  transition: 0.7s;
-}
-
-.button-facebook:hover {
-  background-color: var(--accent-color);
-}
-
-.button-linkin {
-  width: 44px;
-  height: 44px;
-  display: block;
-  background-image: url(/images/linkedin.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: var(--first-back-color);
-  border-radius: 50px;
-  transition: 0.7s;
-}
-
-.button-linkin:hover {
-  background-color: var(--accent-color);
+.card-icon:hover,
+.card-icon:focus {
+  fill: var(--first-back-color);
 }
 
 .headline-name {
@@ -504,19 +445,39 @@ address {
   padding-bottom: 94px;
 }
 
-.cliensts-list {
+.clients-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.cliensts-item {
+.clients-item {
   margin-right: 30px;
 }
 
-.cliensts-item:last-child {
+.clients-item:last-child {
   margin-right: 0x;
+}
+
+.clients-button-icon {
+  transition: 0.7s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-card-icon {
+  fill: var(--accessory-text-color);
+  border: 1px solid var(--accessory-text-color);
+  border-radius: 4px;
+  transition: 0.7s;
+}
+
+.clients-card-icon:hover,
+.clients-card-icon:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* -----------------PORTFOLIO------------------ */
@@ -651,4 +612,30 @@ address {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer-button-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  transition: 0.7s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-button-icon:hover,
+.footer-button-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-card-icon {
+  fill: var(--first-back-color);
+  transition: 0.7s;
+}
+
+.footer-card-icon:hover,
+.footer-card-icon:focus {
+  fill: var(--first-back-color);
 }
