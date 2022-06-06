@@ -9,6 +9,8 @@
   --part-text-color: #212121;
   --additional-text-color: rgba(255, 255, 255, 0.6);
   --accessory-text-color: #757575;
+  --background-box-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 /* section {
@@ -197,16 +199,14 @@ address {
   margin-right: 50px;
 }
 
-
 .contact-icon {
   margin-right: 10px;
-  fill: var(--accessory-text-color);
-
+  fill: currentColor;
 }
 
 .contact-icon:hover,
 .contact-icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* -----------------HERO------------------ */
@@ -230,10 +230,10 @@ address {
   padding-bottom: 200px;
 
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.9),
-      rgba(47, 48, 58, 0.9)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
-    url(./images/hero_img.jpg);
+    url(../images/hero_img.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -284,33 +284,12 @@ address {
 .img-cr-box {
   width: 270px;
   height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  background: #f5f4fa;
+  background: var(--background-box-color);
   border-radius: 4px;
-}
-
-.f-box-img {
-  background-image: url(./images/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.s-box-img {
-  background-image: url(./images/clock.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.t-box-img {
-  background-image: url(./images/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.fs-box-img {
-  background-image: url(./images/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .characteristics-item {
@@ -324,7 +303,6 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--part-text-color);
-
   margin-bottom: 50px;
 }
 
@@ -386,7 +364,6 @@ address {
 .button-icon {
   width: 44px;
   height: 44px;
-  background-color: var(--first-back-color);
   border-radius: 50px;
   transition: 0.7s;
   display: flex;
@@ -396,16 +373,16 @@ address {
 
 .button-icon:hover,
 .button-icon:focus {
-  background-color: var(--accent-color);
+  background: var(--accent-color);
 }
 
 .card-icon {
-  fill: var(--accessory-text-color);
+  fill: var(--icon-color);
   transition: 0.7s;
 }
 
-.card-icon:hover,
-.card-icon:focus {
+.button-icon:hover .card-icon,
+.button-icon:focus .card-icon {
   fill: var(--first-back-color);
 }
 
@@ -438,6 +415,7 @@ address {
 .type-project {
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--accessory-text-color);
 }
 
 .our-clients {
@@ -461,25 +439,27 @@ address {
 }
 
 .clients-button-icon {
-  transition: 0.7s;
-  display: flex;
+  padding: 16px 32px;
+  display: block;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-button-icon:hover,
+.clients-button-icon:focus {
+  border-color: var(--accent-color);
 }
 
 .clients-card-icon {
-  fill: var(--accessory-text-color);
-  border: 1px solid var(--accessory-text-color);
-  border-radius: 4px;
-  transition: 0.7s;
+  fill: var(--icon-color);
 }
 
-.clients-card-icon:hover,
-.clients-card-icon:focus {
+.clients-button-icon:hover .clients-card-icon,
+.clients-button-icon:focus .clients-card-icon {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
-
 /* -----------------PORTFOLIO------------------ */
 
 .portfolio {
